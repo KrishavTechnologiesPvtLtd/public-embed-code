@@ -4,7 +4,11 @@
         <div id="myModal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <iframe id="modalIframe" src="" width="100%" height="300px"></iframe>
+                <iframe id="modalIframe" src="" width=${
+                  window.innerWidth * 0.9
+                }px height=${
+    window.innerHeight * 0.9
+  }px frameborder="0"></iframe>
             </div>
         </div>`;
 
@@ -16,17 +20,17 @@
             z-index: 1;
             left: 0;
             top: 0;
-            width: 100vw;
-            height: 100vh;
+            width: 100%;
+            height: 100%;
             overflow: auto;
             background-color: rgba(0,0,0,0.4);
         }
         .modal-content {
             background-color: #fefefe;
-            margin: 15% auto;
-            padding: 20px;
             border: 1px solid #888;
-            width: 100px;
+            margin: 20px auto;
+            padding:10px; 
+            width: 90%;
         }
         .close {
             color: #aaa;
